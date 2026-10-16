@@ -69,7 +69,7 @@ function render(){
   $('#bank').textContent=`TIPS $${g.bank.toFixed(2)}`;
   const content={order:orderStation,dough:doughStation,bake:bakeStation,build:buildStation}[g.station]();
   doughBoard?.destroy();doughBoard=null;
-  root.innerHTML=`<div class="game-shell ${g.paused?'paused':''}"><section class="station-main" style="background-image:url('${art.get('background-'+g.station)}')"><div class="station-heading"><div><small>PAPA’S ROLLERIA</small><h1>${pretty(g.station)} station</h1></div>${button('pause','Ⅱ Pause','pause')}</div>${content}</section>${ticket()}${nav()}</div>${['result','day-end'].includes(g.phase)?resultOverlay():g.paused?pausedOverlay():''}`;
+  root.innerHTML=`<div class="game-shell ${g.paused?'paused':''}"><section class="station-main" style="background-image:url('${art.get('background-'+g.station)}')"><div class="station-heading"><div><small>PAPA’S CINNABONERIA</small><h1>${pretty(g.station)} station</h1></div>${button('pause','Ⅱ Pause','pause')}</div>${content}</section>${ticket()}${nav()}</div>${['result','day-end'].includes(g.phase)?resultOverlay():g.paused?pausedOverlay():''}`;
   const board=$('#prep-board');
   if(board&&g.station==='dough')doughBoard=mountDoughBoard(board,{roll:g.rolls[g.rollIndex],art,entrance,prepare:boardPrepare,progress:boardProgress,done:boardStepDone,needFilling:()=>toast('Choose a filling first. Check the ticket!')});
   entrance=null;

@@ -1,4 +1,4 @@
-# Papa’s Rolleria
+# Papa’s Cinnaboneria
 
 A playable cinnamon-roll cooking game with four stations and 210 original, editable SVG assets. Run a four-customer shop day, earn tips, and reopen for another day with new recipes.
 
@@ -52,7 +52,7 @@ npm run build             # validated static site in dist/
 npm run assets            # regenerate artwork after editing its drawing source
 ```
 
-`npm run build` also packages the source, artwork, tests, and documentation in `output/papas-rolleria-starter-kit.zip`. The build validates both the source and production output, including the favicon referenced by both pages. Run these checks before pushing changes. Automated GitHub Actions configuration is not included because the current GitHub login does not grant workflow-write permission.
+`npm run build` also packages the source, artwork, tests, and documentation in `output/papas-cinnaboneria-starter-kit.zip`. The build validates both the source and production output, including the favicon referenced by both pages. Run these checks before pushing changes. Automated GitHub Actions configuration is not included because the current GitHub login does not grant workflow-write permission.
 
 ## Hosting
 
