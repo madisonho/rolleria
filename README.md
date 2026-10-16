@@ -15,7 +15,7 @@ Open **http://127.0.0.1:4173/**. Alternatively run `python3 -m http.server 4173 
 ## How to play
 
 1. **Order:** Take the customer's three-roll order. Each numbered recipe appears on the ticket.
-2. **Dough:** Select each roll, choose dough, flatten it, spread butter and filling, roll it up, and slice. Drag ingredients/tools onto the board or use the action buttons. Cut when the moving marker reaches the green zone.
+2. **Dough:** Select each roll and drag its dough onto the board. Then work it by hand: drag the rolling pin up and down to flatten it, swipe the spatula to butter it edge to edge, shake filling over it, and push the bottom edge up to roll the log. Progress follows how much you cover. Each action button plays the same motion for keyboard players. Cut when the moving marker reaches the green zone.
 3. **Bake:** Load all three rolls and pull the tray out between **17 and 23 seconds**. The oven continues while you switch stations. A burnt or underbaked batch can be rebaked before serving.
 4. **Build:** Select a roll, choose its icing, drizzle, and topping, and apply each in three passes. Drag the ingredient onto the pastry or click Apply. Match every ingredient to the ticket.
 5. **Serve:** Receive dough, baking, and decoration scores and tips. Serve all four regulars to finish the day. Next day retains your bank and generates fresh orders.
@@ -34,6 +34,7 @@ The gallery's explanatory text describes the artwork milestone; the playable gam
 
 - `game-engine.js`: pure gameplay rules, state transitions, scoring, recipes, and validated save restoration.
 - `game.js`, `game.css`, `index.html`: interactive game, pointer/keyboard controls, timers, sound, and responsive presentation.
+- `dough-board.js`: the animated dough board. It turns pointer strokes into rolling, buttering, sprinkling, rolling-up and chopping animations, and calls the engine once per completed pass.
 - `studio.html`, `app.js`, `styles.css`: artwork gallery and inspection previews.
 - `assets/`: 210 SVG files plus `manifest.json` with dimensions, anchors, families, and states.
 - `scripts/draw_assets.py`: reproducible original SVG drawing source.
@@ -45,6 +46,7 @@ The gallery's explanatory text describes the artwork milestone; the playable gam
 ```sh
 npm test                  # gameplay rules and the complete SVG contract
 node --check game.js      # browser-controller syntax
+node --check dough-board.js
 node --check app.js       # gallery syntax
 npm run build             # validated static site in dist/
 npm run assets            # regenerate artwork after editing its drawing source

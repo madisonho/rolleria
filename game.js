@@ -1,10 +1,12 @@
 import * as E from './game-engine.js';
+import {mountDoughBoard} from './dough-board.js';
 
 const $ = s => document.querySelector(s);
 const root = $('#playfield');
 const pretty = s => String(s).replaceAll('-', ' ').replace(/\b\w/g, c=>c.toUpperCase());
 const KEY = 'rolleria-save-v1';
 let g=null, saved=null, art, selected=null, decorateKind='icing', sound=false, audio, slicePosition=0;
+let doughBoard=null, entrance=null, refocusPrepare=false;
 let toastTimer, saveElapsed=0, lastTime=performance.now(), helpWasPaused=false, confirmReset=false;
 const shortNames={'cream-cheese':'Cream cheese','chocolate-cinnamon':'Choc cinnamon','chocolate-chips':'Choc chips','rainbow-sprinkles':'Sprinkles','cinnamon-crumble':'Cinnamon crumble'};
 const name = s => shortNames[s] || pretty(s);
@@ -31,16 +33,15 @@ function rollTabs(){return `<div class="roll-tabs" aria-label="Select a roll">${
 function ingredients(kind){const prefix={dough:'bin',filling:'bin',icing:'tub',drizzle:'bottle',topping:'jar'}[kind];return `<div class="ingredient-tray" aria-label="${pretty(kind)} choices">${E.MENU[kind].map(v=>`<button class="ingredient ${selected===v?'selected':''}" data-ingredient="${v}" data-kind="${kind}" data-drag="ingredient" aria-label="Choose ${name(v)} ${kind}" aria-pressed="${selected===v}">${image(prefix+'-'+v)}<span>${name(v)}</span></button>`).join('')}</div>`;}
 function empty(message,action,label,id='finished-roll-1'){return `<div class="work-content"><div class="empty-station">${image(id)}<p>${message}</p>${button(action,label)}</div></div>`;}
 function orderStation(){return `<div class="order-scene">${image('shop-window','window left')}${image('shop-window','window right')}${image(`${E.CUSTOMERS[g.customer]}-full-${g.phase==='result'?(g.result.total>=75?'happy':'disappointed'):'neutral'}`,'customer')}${image('pip-counter-happy','worker')}${image('order-counter','counter')}<span class="customer-name">${pretty(E.CUSTOMERS[g.customer])}</span>${g.phase==='welcome'?button('take','Take order ✎'):g.phase==='cooking'?`<div class="welcome-message">“I can’t wait for my cinnamon rolls!”<br><small>Your ticket is pinned up. Head to the kitchen.</small></div>`:''}</div>`;}
+const workCount={flatten:4,butter:3,fill:3,roll:2};
+const prepareLabel=r=>({flatten:'Roll the dough',butter:'Spread butter',fill:'Shake on filling',roll:'Roll into a log',slice:'Cut now!'})[r.step]+(workCount[r.step]?` · ${r.work}/${workCount[r.step]}`:'');
 function doughStation(){
   if(g.phase==='welcome')return empty('Take the customer’s order before preparing their rolls.','go-order','Back to the counter','order-pad');
   if(g.bake.status!=='raw')return empty('Your dough is already in the baking batch.','go-'+(g.bake.status==='baking'?'bake':'build'),g.bake.status==='baking'?'Check the oven':'Decorate the rolls','tray');
   const r=g.rolls[g.rollIndex];
-  const info={select:'Choose the dough on the ticket. Drag it onto the board or click to select.',flatten:'Flatten the dough. Drag the rolling pin across the board four times.',butter:'Spread a little butter. Three passes should do it.',fill:'Choose the filling from the ticket, then spread it in three passes.',roll:'Roll the sheet into a snug log. Two strokes on the board.',slice:'Cut when the moving marker is inside the green zone!',ready:'A lovely little spiral. Prepare the other rolls, then load the oven.'};
-  const stage={flatten:'ball',butter:'sheet',fill:'buttered',roll:'filled',slice:'log',ready:'sliced'}[r.step];
-  const tool={flatten:'rolling-pin',butter:'spatula',fill:'filling-shaker',roll:'scraper',slice:'slicing-tool'}[r.step];
-  const pastry=r.step==='select'?image('dough-classic-cinnamon-ball','pastry','style="opacity:.25"'):r.step==='ready'?image(`roll-${r.dough}-${r.filling}-raw`,'pastry'):image(`dough-${r.dough}-${r.filling||'cinnamon'}-${stage}`,'pastry');
-  const workCount={flatten:4,butter:3,fill:3,roll:2};
-  return `<div class="work-content"><p class="instruction">${info[r.step]}</p>${rollTabs()}<div class="prep-board" id="prep-board" aria-label="Dough preparation board">${pastry}${tool?image(tool,'tool-on-board',`data-drag="tool" aria-label="Drag ${pretty(tool)}"`):''}${r.step==='slice'?'<div class="slice-game"><div class="slice-track"><span class="slice-zone"></span><span class="slice-needle"></span></div><small>Cut inside the green band · keyboard: focus Cut and press Enter</small></div>':`<span class="board-hint">${r.step==='select'?'DROP DOUGH HERE':r.step==='ready'?'READY FOR THE OVEN':'DRAG ACROSS THE BOARD OR USE THE BUTTON BELOW'}</span>`}</div>${r.step==='select'?ingredients('dough'):r.step==='fill'?ingredients('filling'):''}${workCount[r.step]?`<div class="progress-track" aria-label="Preparation progress"><span style="width:${r.work/workCount[r.step]*100}%"></span></div>`:''}<div class="action-row">${r.step==='ready'?E.canBake(g)?button('go-bake','All ready → Bake station','action-button'):button('next-roll','Prepare next roll →','action-button'):r.step==='select'?button('add-dough','Place selected dough','action-button',!selected):button('prepare',({flatten:'Roll the dough',butter:'Spread butter',fill:'Spread filling',roll:'Roll into a log',slice:'Cut now!'})[r.step]+(workCount[r.step]?` · ${r.work}/${workCount[r.step]}`:''),'action-button',r.step==='fill'&&!r.filling)}${r.step!=='select'?button('reset-roll','Start this roll over','quiet-button'):''}</div></div>`;
+  const info={select:'Choose the dough on the ticket. Drag it onto the board or click to select.',flatten:'Flatten the dough. Drag the rolling pin up and down over it.',butter:'Spread the butter. Swipe the spatula over the dough until it’s covered edge to edge.',fill:'Pick the filling from the ticket, then shake it over the butter until it’s covered.',roll:'Roll it up! Push the bottom edge of the dough up to the top.',slice:'Cut when the moving marker is inside the green zone!',ready:'A lovely little spiral. Prepare the other rolls, then load the oven.'};
+  const hint={select:'DROP DOUGH HERE',ready:'READY FOR THE OVEN',flatten:'DRAG THE PIN UP AND DOWN',butter:'SWIPE BUTTER OVER THE DOUGH',fill:r.filling?'HOLD AND SHAKE OVER THE DOUGH':'PICK A FILLING BELOW',roll:'DRAG THE BOTTOM EDGE UPWARD'}[r.step];
+  return `<div class="work-content"><p class="instruction">${info[r.step]}</p>${rollTabs()}<div class="prep-board" id="prep-board" aria-label="Dough preparation board">${r.step==='slice'?'<div class="slice-game"><div class="slice-track"><span class="slice-zone"></span><span class="slice-needle"></span></div><small>Cut inside the green band · keyboard: focus Cut and press Enter</small></div>':`<span class="board-hint">${hint}</span>`}</div>${r.step==='select'?ingredients('dough'):r.step==='fill'?ingredients('filling'):''}${workCount[r.step]?`<div class="progress-track" aria-label="Preparation progress"><span style="width:${r.work/workCount[r.step]*100}%"></span></div>`:''}<div class="action-row">${r.step==='ready'?E.canBake(g)?button('go-bake','All ready → Bake station','action-button'):button('next-roll','Prepare next roll →','action-button'):r.step==='select'?button('add-dough','Place selected dough','action-button',!selected):button('prepare',prepareLabel(r),'action-button',r.step==='fill'&&!r.filling)}${r.step!=='select'?button('reset-roll','Start this roll over','quiet-button'):''}</div></div>`;
 }
 function bakeStation(){
   if(!E.canBake(g))return empty('Prepare all three rolls at the dough station first.','go-dough','Back to the dough','oven-mitt');
@@ -67,21 +68,49 @@ function render(){
   $('#day-status').textContent=`DAY ${g.day} · CUSTOMER ${g.customer+1} OF 4`;
   $('#bank').textContent=`TIPS $${g.bank.toFixed(2)}`;
   const content={order:orderStation,dough:doughStation,bake:bakeStation,build:buildStation}[g.station]();
+  doughBoard?.destroy();doughBoard=null;
   root.innerHTML=`<div class="game-shell ${g.paused?'paused':''}"><section class="station-main" style="background-image:url('${art.get('background-'+g.station)}')"><div class="station-heading"><div><small>PAPA’S ROLLERIA</small><h1>${pretty(g.station)} station</h1></div>${button('pause','Ⅱ Pause','pause')}</div>${content}</section>${ticket()}${nav()}</div>${['result','day-end'].includes(g.phase)?resultOverlay():g.paused?pausedOverlay():''}`;
+  const board=$('#prep-board');
+  if(board&&g.station==='dough')doughBoard=mountDoughBoard(board,{roll:g.rolls[g.rollIndex],art,entrance,prepare:boardPrepare,progress:boardProgress,done:boardStepDone,needFilling:()=>toast('Choose a filling first. Check the ticket!')});
+  entrance=null;
+  if(refocusPrepare){refocusPrepare=false;root.querySelector('[data-action="prepare"]:not(:disabled),[data-action="next-roll"],[data-action="go-bake"]')?.focus();}
   persist();
 }
 function afterAction(message){beep();render();if(message)toast(message);}
+// The dough board drives the engine one pass at a time without redrawing the station mid-stroke.
+function boardPrepare(){
+  const r=g.rolls[g.rollIndex],was=r.step;
+  if(!E.prepare(g))return false;
+  beep();persist();
+  if(r.step!==was){refocusPrepare=document.activeElement?.dataset.action==='prepare';return 'done';}
+  boardProgress(r.work/workCount[r.step]);
+  const b=root.querySelector('[data-action="prepare"]');if(b)b.textContent=prepareLabel(r);
+  return 'work';
+}
+function boardProgress(fraction){const bar=root.querySelector('.progress-track>span');if(bar)bar.style.width=Math.min(100,fraction*100)+'%';}
+function boardStepDone(){
+  const r=g.rolls[g.rollIndex];selected=null;render();
+  toast({butter:'Nice and flat! Now the butter.',fill:'Buttered edge to edge. Time for filling!',roll:'Filling on. Roll it up!',slice:'A snug little log. Slice it!'}[r.step]);
+}
 function selectIngredient(kind,value){
   selected=value;
-  if(kind==='filling')E.chooseFilling(g,value);
+  if(kind==='filling'&&E.chooseFilling(g,value))entrance='pour';
   render();
 }
 function applyIngredient(){if(!selected)return;const r=g.rolls[g.rollIndex];if(E.decorate(g,decorateKind,selected)){const complete=r.coverage[decorateKind]===3;afterAction(complete?`${pretty(decorateKind)} finished! Move to the next step.`:null);}}
 function prepareRoll(){
   const r=g.rolls[g.rollIndex],was=r.step;
+  if(doughBoard&&workCount[r.step]){doughBoard.auto();return;}
+  if(doughBoard?.busy)return;
   const precision=Math.max(0,1-Math.max(0,Math.abs(slicePosition-.5)-.1)*2.5);
   if(E.prepare(g,precision)) {
     if(was!==r.step)selected=null;
+    if(doughBoard&&was==='slice'){
+      beep();persist();refocusPrepare=document.activeElement?.dataset.action==='prepare';
+      const message=precision>.95?'Perfect cut! That’s a beautiful spiral.':'Roll sliced. Ready for the oven.';
+      doughBoard.chop(slicePosition,()=>{entrance='pop';render();toast(message);});
+      return;
+    }
     afterAction(r.step==='ready'?(precision>.95?'Perfect cut! That’s a beautiful spiral.':'Roll sliced. Ready for the oven.'):null);
   }else toast('Choose a filling first. Check the ticket!');
 }
@@ -95,7 +124,7 @@ function handleAction(action){
   if(action==='pause'){g.paused=true;render();return;}
   if(action.startsWith('go-')){g.station=action.slice(3);selected=null;render();return;}
   if(action==='take'){if(E.takeOrder(g))afterAction('Order taken! Match each roll to the ticket.');}
-  if(action==='add-dough'){if(E.chooseDough(g,selected)){selected=null;afterAction();}}
+  if(action==='add-dough'){if(E.chooseDough(g,selected)){selected=null;entrance='plop';afterAction();}}
   if(action==='prepare')prepareRoll();
   if(action==='reset-roll'){E.resetRoll(g);selected=null;afterAction();}
   if(action==='next-roll'){const i=g.rolls.findIndex(r=>r.step!=='ready');if(i>=0)setRoll(i);}
@@ -131,12 +160,13 @@ root.addEventListener('pointerdown',e=>{
   if(!g||g.paused||g.phase!=='cooking'||e.button!==0)return;
   const source=e.target.closest('[data-drag]');
   const board=e.target.closest('#prep-board');
-  if(!source&&!board)return;
-  if(board&&['select','ready','slice'].includes(g.rolls[g.rollIndex].step))return;
-  const img=source?.matches('img')?source:source?.querySelector('img');
-  drag={startX:e.clientX,startY:e.clientY,id:e.pointerId,kind:source?.dataset.kind,value:source?.dataset.ingredient,tool:!source||source.dataset.drag==='tool',src:img?.src,moved:false};
+  if(board&&doughBoard){if(doughBoard.begin(e)){e.preventDefault();try{board.setPointerCapture(e.pointerId);}catch{}}return;}
+  if(!source)return;
+  const img=source.matches('img')?source:source.querySelector('img');
+  drag={startX:e.clientX,startY:e.clientY,id:e.pointerId,kind:source.dataset.kind,value:source.dataset.ingredient,src:img?.src,moved:false};
 });
 window.addEventListener('pointermove',e=>{
+  doughBoard?.move(e);
   if(!drag||drag.id!==e.pointerId)return;
   if(Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>12)drag.moved=true;
   if(!drag.moved)return;
@@ -145,16 +175,16 @@ window.addEventListener('pointermove',e=>{
   const board=$('#prep-board')||$('#decoration-board');if(board){const b=board.getBoundingClientRect();board.classList.toggle('drag-over',e.clientX>=b.left&&e.clientX<=b.right&&e.clientY>=b.top&&e.clientY<=b.bottom);}
 });
 function cancelDrag(){drag=null;$('.drag-ghost')?.remove();$('.drag-over')?.classList.remove('drag-over');}
-window.addEventListener('pointercancel',cancelDrag);
+window.addEventListener('pointercancel',e=>{doughBoard?.end(e);cancelDrag();});
 window.addEventListener('pointerup',e=>{
+  doughBoard?.end(e);
   if(!drag||e.pointerId!==drag.id)return;
   const d=drag,board=$('#prep-board')||$('#decoration-board'),bounds=board?.getBoundingClientRect();
   const inside=bounds&&e.clientX>=bounds.left&&e.clientX<=bounds.right&&e.clientY>=bounds.top&&e.clientY<=bounds.bottom;
   cancelDrag();if(!d.moved)return;
   if(!inside||!g||g.paused)return;
-  if(d.tool){if(g.station==='dough')prepareRoll();return;}
-  if(d.kind==='dough'){if(E.chooseDough(g,d.value)){selected=null;afterAction();}}
-  else if(d.kind==='filling'){if(E.chooseFilling(g,d.value)){selected=d.value;prepareRoll();}}
+  if(d.kind==='dough'){if(E.chooseDough(g,d.value)){selected=null;entrance='plop';afterAction();}}
+  else if(d.kind==='filling'){if(E.chooseFilling(g,d.value)){selected=d.value;entrance='pour';afterAction();}}
   else if(g.station==='build'){selected=d.value;decorateKind=d.kind;applyIngredient();}
 });
 function openHelp(){helpWasPaused=g?.paused??true;if(g){g.paused=true;render();}$('#help-dialog').showModal();}
@@ -173,6 +203,7 @@ function frame(now){
     if(g.phase==='cooking'&&g.rolls[g.rollIndex].step==='slice'){
       slicePosition=(Math.sin(now/480)+1)/2;
       const needle=$('.slice-needle');if(needle)needle.style.left=(slicePosition*100)+'%';
+      doughBoard?.setSlice(slicePosition);
     }
     if(g.bake.status==='baking'){
       const clock=$('#oven-clock');if(clock)clock.textContent=g.bake.seconds.toFixed(1)+'s';

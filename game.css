@@ -3,3 +3,39 @@
 @media(max-width:900px){header{padding:0 18px}.wordmark{font-size:18px}main{padding:0 14px 20px}.game-shell{grid-template-columns:minmax(0,1fr) 200px}.work-content{padding:14px}.station-heading{padding:14px}.station-heading h1{font-size:19px}.ticket{padding:14px 9px}.ticket-row{font-size:9px;gap:3px}.ticket-row img{width:23px;height:23px}.title-screen{gap:20px;min-height:630px}.title-copy h1{font-size:41px}.title-art{width:45%}.instruction{font-size:12px}.ingredient{min-width:73px;padding:6px}.ingredient img{width:40px;height:52px}.tool-on-board{width:110px;right:8px}.oven-readout{font-size:20px}.action-button{min-width:180px;font-size:12px}.station-nav{gap:3px}.station-nav img{height:56px}}
 @media(max-width:620px){header{height:62px;padding:0 12px}.wordmark{font-size:16px;gap:6px}.wordmark img{width:30px;height:30px}.header-links{gap:3px;font-size:10px}.header-links button{padding:5px;font-size:10px}.header-links>a{display:none}main{padding:0 7px 20px}.shop-status{font-size:8px;letter-spacing:.5px;padding:10px 4px}#playfield{border-width:3px;border-radius:14px;min-height:600px}.game-shell{grid-template-columns:1fr}.station-main{min-height:540px}.station-heading{padding:10px 12px}.station-heading h1{font-size:18px}.station-heading small{font-size:8px}.ticket{border-left:0;border-top:3px solid var(--ink);padding:10px 8px;display:grid;grid-template-columns:repeat(3,1fr);gap:4px}.ticket-title{grid-column:1/-1;margin:0;justify-content:space-between}.ticket-title strong{font-size:18px}.ticket-title span{font-size:10px}.ticket .clip,.ticket-footer{display:none}.ticket-recipe{padding:5px 3px;border-top:1px dashed #c6a57b}.recipe-heading{font-size:9px;gap:3px}.recipe-heading b{font-size:14px}.ticket-row{font-size:8px;gap:3px;line-height:1.3;margin-top:3px}.ticket-row img{width:20px;height:20px}.station-nav{position:sticky;bottom:0;padding:5px 4px;gap:1px;z-index:10}.station-nav img{height:49px}.work-content{padding:10px;min-height:460px}.prep-board{min-height:220px}.prep-board img.pastry{width:235px;height:220px}.tool-on-board{width:80px;height:65px;top:5px;right:4px}.instruction{padding:8px 11px;font-size:11px;margin-bottom:10px;border-width:2px}.roll-tabs{gap:5px;margin-bottom:9px}.roll-tabs button{font-size:11px;padding:6px}.roll-tabs small{font-size:8px}.ingredient-tray{gap:5px;margin:9px 0}.ingredient{font-size:9px;min-width:65px;padding:5px;max-width:95px}.ingredient img{width:35px;height:43px}.action-row{gap:5px;margin-top:11px;flex-wrap:wrap}.action-button{padding:9px 16px;min-width:170px;font-size:12px}.quiet-button{font-size:10px;padding:7px}.title-screen{flex-direction:column;gap:0;padding:24px 25px 36px;min-height:660px}.title-art{width:100%;max-width:330px}.title-copy{width:100%;text-align:center}.title-copy h1{font-size:36px;margin:10px 0}.title-copy p{font-size:13px}.title-copy .primary{font-size:17px}.title-copy .kicker{margin:0}.order-scene{min-height:440px}.order-scene .customer{width:60%;left:21%}.order-scene .worker{width:29%}.order-scene .customer-name{font-size:18px;bottom:8%}.order-scene .primary{width:200px;left:calc(50% - 100px);font-size:15px;top:6%}.oven-wrap{min-height:300px}.oven-art{width:100%}.oven-rolls{left:23%;width:54%;top:38%}.oven-readout{font-size:17px;top:24%}.decorated-roll{width:245px;height:229px}.decoration-count{font-size:10px;bottom:9px;right:9px}.decorate-tabs button{font-size:10px;padding:7px}.result-card{padding:20px 15px;border-width:3px;border-radius:18px}.result-card h2{font-size:29px}.result-stars{font-size:30px}.score-columns{gap:6px;margin:15px 0}.score-columns strong{font-size:24px}.score-columns span{font-size:10px}.modal-shade{padding:12px;align-items:flex-start;padding-top:70px}.below-game{font-size:8px;gap:15px;line-height:1.5}.below-game>span:last-child{text-align:right;max-width:145px}.day-orders{gap:10px}.day-orders img{height:70px;width:40px}.result-card .primary{font-size:13px}dialog{padding:24px}dialog h2{font-size:25px}.empty-station{min-height:400px}.empty-station p{font-size:14px}.feedback{font-size:12px;top:65px;width:85%;max-width:90%}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Animated dough board */
+.prep-board{overflow:hidden}
+.dough-stage{position:relative;width:280px;aspect-ratio:300/280;pointer-events:none;flex:none}
+.dough-stage .layer{position:absolute;inset:0;width:100%;height:100%}
+.dough-stage img.layer{object-fit:contain;transform-origin:50% 82%}
+.dough-stage.squish{animation:dough-squish .3s ease-out}
+.dough-stage.thunk{animation:dough-thunk .28s ease-out}
+.dough-stage.enter-plop .base{animation:dough-plop .6s cubic-bezier(.3,1.3,.5,1) both}
+.dough-stage.enter-pop .base{animation:dough-pop .55s cubic-bezier(.3,1.6,.5,1) both}
+.dough-stage.ready .base{animation:dough-bob 2.4s ease-in-out .6s infinite}
+.dough-tool{position:absolute;left:0;top:0;width:0;height:0;z-index:3;pointer-events:none;transition:transform .34s cubic-bezier(.3,1.35,.5,1);filter:drop-shadow(3px 5px 0 #3c272630)}
+.dough-tool img{position:absolute;max-width:none;object-fit:contain}
+.dough-tool.active{transition:none;filter:drop-shadow(7px 14px 3px #3c272640)}
+.dough-tool.active img{scale:1.04}
+.dough-tool.shaking img{animation:tool-shake .11s ease-in-out infinite alternate}
+.dough-tool[data-tool="slicing-tool"]{transition:none}
+.dough-tool .pin-grain{position:absolute;pointer-events:none;background:repeating-linear-gradient(to bottom,transparent 0 8px,#3c272618 8px 10px,transparent 10px 16px,#fff0c855 16px 18px)}
+.prep-board:has(.dough-stage[data-step="flatten"]),.prep-board:has(.dough-stage[data-step="butter"]),.prep-board:has(.dough-stage[data-step="fill"]),.prep-board:has(.dough-stage[data-step="roll"]){cursor:grab}
+.prep-board:has(.dough-tool.active){cursor:grabbing}
+.particle{position:absolute;pointer-events:none;transform:translate(-50%,-50%)}
+.particle.flour{width:8px;height:8px;border-radius:50%;background:#fffaf0;box-shadow:0 0 4px #fff;animation:particle-puff .8s ease-out forwards}
+.particle.crumb{width:6px;height:6px;border-radius:2px;background:#e8c27e;border:1px solid #3c272666;animation:particle-puff .7s ease-out forwards}
+.particle.grain{width:4px;height:4px;border-radius:1px;animation:particle-fall .3s cubic-bezier(.55,0,1,.6) forwards}
+.particle.sparkle{width:12px;height:12px;background:#fffbe8;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:particle-twinkle .7s ease-out forwards}
+@keyframes particle-puff{from{transform:translate(-50%,-50%) scale(.5);opacity:.95}to{transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1.5);opacity:0}}
+@keyframes particle-fall{from{transform:translate(-50%,-50%)}to{transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) rotate(160deg)}}
+@keyframes particle-twinkle{0%{transform:translate(-50%,-50%) scale(0) rotate(0)}40%{transform:translate(-50%,-50%) scale(1.2) rotate(40deg)}100%{transform:translate(-50%,-80%) scale(0) rotate(90deg)}}
+@keyframes tool-shake{from{rotate:-9deg;translate:0 -3px}to{rotate:9deg;translate:0 3px}}
+@keyframes dough-squish{40%{transform:scale(1.04,.95)}75%{transform:scale(.99,1.02)}}
+@keyframes dough-thunk{30%{transform:translateY(4px) scale(1.02,.97)}}
+@keyframes dough-plop{0%{transform:translateY(-140px) scale(.8,1.2);opacity:0}45%{transform:translateY(0) scale(1.18,.8);opacity:1}70%{transform:scale(.94,1.07)}100%{transform:none}}
+@keyframes dough-pop{0%{transform:scale(.3) rotate(-25deg);opacity:0}100%{transform:none;opacity:1}}
+@keyframes dough-bob{50%{transform:translateY(-4px) rotate(2deg)}}
+@media(max-width:620px){.dough-stage{width:235px}}
+@media(prefers-reduced-motion:reduce){.dough-stage,.dough-stage *,.dough-tool img{animation:none!important}}
