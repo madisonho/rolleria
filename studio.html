@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f1e5">
+  <meta name="description" content="Papa’s Rolleria — an original, editable SVG artwork kit for a cinnamon-roll cooking game.">
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <title>Papa’s Rolleria · The art kitchen</title>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#" aria-label="Papa’s Rolleria home"><img src="public/favicon.svg" alt=""><span>Papa’s Rolleria<small>THE ART KITCHEN</small></span></a>
+    <nav class="view-nav" aria-label="Workspace"><button class="active" data-view="stations">Station previews</button><button data-view="library">Asset library <span id="asset-total">…</span></button></nav>
+    <a class="manifest-link" href="index.html">Play the game <span>↗</span></a>
+  </header>
+  <main>
+    <section id="stations-view" class="view">
+      <div class="intro"><div><p class="eyebrow">FRESHLY DRAWN, READY TO ROLL</p><h1>A little flour. A lot of character.</h1><p>Four stations. One sweet little world. Explore the original artwork for our cinnamon-roll shop.</p></div><span class="kit-tag"><span></span> STARTER ART KIT · V1.0</span></div>
+      <div class="preview-layout">
+        <div class="game-wrap">
+          <div class="frame-label"><span><i></i> <span id="station-frame-label">01 / ORDER STATION</span></span><span>1440 × 1000 · SVG</span></div>
+          <div class="game" id="game" aria-label="Assembled station preview"></div>
+          <div class="preview-caption"><span><b>Artwork preview</b> · Gameplay comes next.</span><button id="guide-toggle" aria-pressed="false">Show layout guides <span>⌗</span></button></div>
+        </div>
+        <aside class="station-notes">
+          <div class="note-top"><span id="station-number">01</span><span>THE STATIONS</span></div>
+          <h2 id="station-title">A warm welcome.</h2><p id="station-description"></p>
+          <div id="station-options"></div>
+          <div class="recipe-note"><span class="eyebrow">ON THE TICKET</span><h3>Three little spirals.</h3><div id="recipe-list"></div></div>
+          <div class="asset-link-row"><span id="scene-asset-count"></span><button id="related-assets">Explore assets ↗</button></div>
+        </aside>
+      </div>
+      <div class="station-index" id="station-index"></div>
+      <section class="collection-strip"><div><p class="eyebrow">MADE TO MIX &amp; MATCH</p><h2>Small pieces. A whole world.</h2><p>Every character, swirl, and squeeze bottle is an editable SVG.</p><button class="text-button" id="browse-all">Step into the asset library ↗</button></div><div id="featured-assets"></div></section>
+    </section>
+    <section id="library-view" class="view" hidden>
+      <div class="intro"><div><p class="eyebrow">THE INGREDIENTS BEHIND THE GAME</p><h1>Every little piece.</h1><p>Original vector artwork. Transparent backgrounds. Ready for a second helping.</p></div><a class="outline-button" href="assets/manifest.json" download>Download manifest ↓</a></div>
+      <div class="library-toolbar"><div id="category-filters" aria-label="Asset category"></div><label class="search"><span>⌕</span><input type="search" id="asset-search" placeholder="Find a roll, tool, character…" aria-label="Search assets"></label></div>
+      <div class="library-summary"><span id="result-count"></span><label><input type="checkbox" id="all-states"> Show every state</label></div>
+      <div class="asset-grid" id="asset-grid"></div><p id="empty-results" hidden>No artwork matches that search. Try another name or category.</p>
+    </section>
+  </main>
+  <footer><span><img src="public/favicon.svg" alt=""> Made from scratch. Right down to the swirls.</span><span>Original artwork · Editable SVG · Local preview</span></footer>
+  <dialog id="asset-dialog"><button id="close-dialog" class="dialog-close" aria-label="Close asset details">×</button><div class="detail-preview" id="detail-preview"></div><div class="detail-info"><p class="eyebrow" id="detail-category"></p><h2 id="detail-title"></h2><p id="detail-dimensions"></p><div id="detail-states"></div><a id="download-asset" class="solid-button" download>Download SVG ↓</a><a id="open-asset" target="_blank" rel="noopener">Open original ↗</a><p class="detail-hint">Select a state to compare. All files stay editable, with named groups for animation.</p></div></dialog>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

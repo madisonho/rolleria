@@ -1,0 +1,4062 @@
+{
+  "version": 1,
+  "title": "Papa\u2019s Rolleria",
+  "canvas": {
+    "width": 1440,
+    "height": 1000
+  },
+  "foodAnchor": [
+    150,
+    160
+  ],
+  "assets": [
+    {
+      "id": "roll-classic-cinnamon-raw",
+      "category": "food",
+      "file": "assets/food/roll-classic-cinnamon-raw.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-classic-cinnamon",
+      "state": "raw",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-classic-cinnamon-underbaked",
+      "category": "food",
+      "file": "assets/food/roll-classic-cinnamon-underbaked.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-classic-cinnamon",
+      "state": "underbaked",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-classic-cinnamon-golden",
+      "category": "food",
+      "file": "assets/food/roll-classic-cinnamon-golden.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-classic-cinnamon",
+      "state": "golden",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-classic-cinnamon-burnt",
+      "category": "food",
+      "file": "assets/food/roll-classic-cinnamon-burnt.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-classic-cinnamon",
+      "state": "burnt",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-classic-chocolate-cinnamon-raw",
+      "category": "food",
+      "file": "assets/food/roll-classic-chocolate-cinnamon-raw.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-classic-chocolate-cinnamon",
+      "state": "raw",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-classic-chocolate-cinnamon-underbaked",
+      "category": "food",
+      "file": "assets/food/roll-classic-chocolate-cinnamon-underbaked.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-classic-chocolate-cinnamon",
+      "state": "underbaked",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-classic-chocolate-cinnamon-golden",
+      "category": "food",
+      "file": "assets/food/roll-classic-chocolate-cinnamon-golden.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-classic-chocolate-cinnamon",
+      "state": "golden",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-classic-chocolate-cinnamon-burnt",
+      "category": "food",
+      "file": "assets/food/roll-classic-chocolate-cinnamon-burnt.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-classic-chocolate-cinnamon",
+      "state": "burnt",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "dough-classic-cinnamon-ball",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-cinnamon-ball.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-cinnamon",
+      "state": "ball",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-cinnamon-sheet",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-cinnamon-sheet.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-cinnamon",
+      "state": "sheet",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-cinnamon-buttered",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-cinnamon-buttered.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-cinnamon",
+      "state": "buttered",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-cinnamon-filled",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-cinnamon-filled.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-cinnamon",
+      "state": "filled",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-cinnamon-log",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-cinnamon-log.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-cinnamon",
+      "state": "log",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-cinnamon-sliced",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-cinnamon-sliced.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-cinnamon",
+      "state": "sliced",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-chocolate-cinnamon-ball",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-chocolate-cinnamon-ball.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-chocolate-cinnamon",
+      "state": "ball",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-chocolate-cinnamon-sheet",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-chocolate-cinnamon-sheet.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-chocolate-cinnamon",
+      "state": "sheet",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-chocolate-cinnamon-buttered",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-chocolate-cinnamon-buttered.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-chocolate-cinnamon",
+      "state": "buttered",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-chocolate-cinnamon-filled",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-chocolate-cinnamon-filled.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-chocolate-cinnamon",
+      "state": "filled",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-chocolate-cinnamon-log",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-chocolate-cinnamon-log.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-chocolate-cinnamon",
+      "state": "log",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-classic-chocolate-cinnamon-sliced",
+      "category": "dough",
+      "file": "assets/dough/dough-classic-chocolate-cinnamon-sliced.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-classic-chocolate-cinnamon",
+      "state": "sliced",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "roll-cocoa-cinnamon-raw",
+      "category": "food",
+      "file": "assets/food/roll-cocoa-cinnamon-raw.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-cocoa-cinnamon",
+      "state": "raw",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-cocoa-cinnamon-underbaked",
+      "category": "food",
+      "file": "assets/food/roll-cocoa-cinnamon-underbaked.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-cocoa-cinnamon",
+      "state": "underbaked",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-cocoa-cinnamon-golden",
+      "category": "food",
+      "file": "assets/food/roll-cocoa-cinnamon-golden.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-cocoa-cinnamon",
+      "state": "golden",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-cocoa-cinnamon-burnt",
+      "category": "food",
+      "file": "assets/food/roll-cocoa-cinnamon-burnt.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-cocoa-cinnamon",
+      "state": "burnt",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-cocoa-chocolate-cinnamon-raw",
+      "category": "food",
+      "file": "assets/food/roll-cocoa-chocolate-cinnamon-raw.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-cocoa-chocolate-cinnamon",
+      "state": "raw",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-cocoa-chocolate-cinnamon-underbaked",
+      "category": "food",
+      "file": "assets/food/roll-cocoa-chocolate-cinnamon-underbaked.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-cocoa-chocolate-cinnamon",
+      "state": "underbaked",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-cocoa-chocolate-cinnamon-golden",
+      "category": "food",
+      "file": "assets/food/roll-cocoa-chocolate-cinnamon-golden.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-cocoa-chocolate-cinnamon",
+      "state": "golden",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "roll-cocoa-chocolate-cinnamon-burnt",
+      "category": "food",
+      "file": "assets/food/roll-cocoa-chocolate-cinnamon-burnt.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "roll-cocoa-chocolate-cinnamon",
+      "state": "burnt",
+      "tags": [],
+      "availableStates": [
+        "raw",
+        "underbaked",
+        "golden",
+        "burnt"
+      ]
+    },
+    {
+      "id": "dough-cocoa-cinnamon-ball",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-cinnamon-ball.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-cinnamon",
+      "state": "ball",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-cinnamon-sheet",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-cinnamon-sheet.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-cinnamon",
+      "state": "sheet",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-cinnamon-buttered",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-cinnamon-buttered.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-cinnamon",
+      "state": "buttered",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-cinnamon-filled",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-cinnamon-filled.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-cinnamon",
+      "state": "filled",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-cinnamon-log",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-cinnamon-log.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-cinnamon",
+      "state": "log",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-cinnamon-sliced",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-cinnamon-sliced.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-cinnamon",
+      "state": "sliced",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-chocolate-cinnamon-ball",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-chocolate-cinnamon-ball.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-chocolate-cinnamon",
+      "state": "ball",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-chocolate-cinnamon-sheet",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-chocolate-cinnamon-sheet.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-chocolate-cinnamon",
+      "state": "sheet",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-chocolate-cinnamon-buttered",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-chocolate-cinnamon-buttered.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-chocolate-cinnamon",
+      "state": "buttered",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-chocolate-cinnamon-filled",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-chocolate-cinnamon-filled.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-chocolate-cinnamon",
+      "state": "filled",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-chocolate-cinnamon-log",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-chocolate-cinnamon-log.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-chocolate-cinnamon",
+      "state": "log",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "dough-cocoa-chocolate-cinnamon-sliced",
+      "category": "dough",
+      "file": "assets/dough/dough-cocoa-chocolate-cinnamon-sliced.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "dough-cocoa-chocolate-cinnamon",
+      "state": "sliced",
+      "tags": [],
+      "availableStates": [
+        "ball",
+        "sheet",
+        "buttered",
+        "filled",
+        "log",
+        "sliced"
+      ]
+    },
+    {
+      "id": "icing-cream-cheese",
+      "category": "decorations",
+      "file": "assets/decorations/icing-cream-cheese.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "icing-cream-cheese",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "tub-cream-cheese",
+      "category": "ingredients",
+      "file": "assets/ingredients/tub-cream-cheese.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "tub-cream-cheese",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-icing-cream-cheese",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-icing-cream-cheese.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-icing-cream-cheese",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "icing-vanilla",
+      "category": "decorations",
+      "file": "assets/decorations/icing-vanilla.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "icing-vanilla",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "tub-vanilla",
+      "category": "ingredients",
+      "file": "assets/ingredients/tub-vanilla.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "tub-vanilla",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-icing-vanilla",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-icing-vanilla.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-icing-vanilla",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "icing-chocolate",
+      "category": "decorations",
+      "file": "assets/decorations/icing-chocolate.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "icing-chocolate",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "tub-chocolate",
+      "category": "ingredients",
+      "file": "assets/ingredients/tub-chocolate.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "tub-chocolate",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-icing-chocolate",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-icing-chocolate.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-icing-chocolate",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "drizzle-vanilla",
+      "category": "decorations",
+      "file": "assets/decorations/drizzle-vanilla.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "drizzle-vanilla",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "bottle-vanilla",
+      "category": "ingredients",
+      "file": "assets/ingredients/bottle-vanilla.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "bottle-vanilla",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-drizzle-vanilla",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-drizzle-vanilla.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-drizzle-vanilla",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "drizzle-caramel",
+      "category": "decorations",
+      "file": "assets/decorations/drizzle-caramel.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "drizzle-caramel",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "bottle-caramel",
+      "category": "ingredients",
+      "file": "assets/ingredients/bottle-caramel.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "bottle-caramel",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-drizzle-caramel",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-drizzle-caramel.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-drizzle-caramel",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "drizzle-strawberry",
+      "category": "decorations",
+      "file": "assets/decorations/drizzle-strawberry.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "drizzle-strawberry",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "bottle-strawberry",
+      "category": "ingredients",
+      "file": "assets/ingredients/bottle-strawberry.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "bottle-strawberry",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-drizzle-strawberry",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-drizzle-strawberry.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-drizzle-strawberry",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "topping-pecans",
+      "category": "decorations",
+      "file": "assets/decorations/topping-pecans.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "topping-pecans",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "piece-pecans",
+      "category": "decorations",
+      "file": "assets/decorations/piece-pecans.svg",
+      "width": 40,
+      "height": 40,
+      "anchor": [
+        20.0,
+        20.0
+      ],
+      "family": "piece-pecans",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "jar-pecans",
+      "category": "ingredients",
+      "file": "assets/ingredients/jar-pecans.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "jar-pecans",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-topping-pecans",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-topping-pecans.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-topping-pecans",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "topping-chocolate-chips",
+      "category": "decorations",
+      "file": "assets/decorations/topping-chocolate-chips.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "topping-chocolate-chips",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "piece-chocolate-chips",
+      "category": "decorations",
+      "file": "assets/decorations/piece-chocolate-chips.svg",
+      "width": 40,
+      "height": 40,
+      "anchor": [
+        20.0,
+        20.0
+      ],
+      "family": "piece-chocolate-chips",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "jar-chocolate-chips",
+      "category": "ingredients",
+      "file": "assets/ingredients/jar-chocolate-chips.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "jar-chocolate-chips",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-topping-chocolate-chips",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-topping-chocolate-chips.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-topping-chocolate-chips",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "topping-rainbow-sprinkles",
+      "category": "decorations",
+      "file": "assets/decorations/topping-rainbow-sprinkles.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "topping-rainbow-sprinkles",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "piece-rainbow-sprinkles",
+      "category": "decorations",
+      "file": "assets/decorations/piece-rainbow-sprinkles.svg",
+      "width": 40,
+      "height": 40,
+      "anchor": [
+        20.0,
+        20.0
+      ],
+      "family": "piece-rainbow-sprinkles",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "jar-rainbow-sprinkles",
+      "category": "ingredients",
+      "file": "assets/ingredients/jar-rainbow-sprinkles.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "jar-rainbow-sprinkles",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-topping-rainbow-sprinkles",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-topping-rainbow-sprinkles.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-topping-rainbow-sprinkles",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "topping-cinnamon-crumble",
+      "category": "decorations",
+      "file": "assets/decorations/topping-cinnamon-crumble.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "topping-cinnamon-crumble",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "piece-cinnamon-crumble",
+      "category": "decorations",
+      "file": "assets/decorations/piece-cinnamon-crumble.svg",
+      "width": 40,
+      "height": 40,
+      "anchor": [
+        20.0,
+        20.0
+      ],
+      "family": "piece-cinnamon-crumble",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "jar-cinnamon-crumble",
+      "category": "ingredients",
+      "file": "assets/ingredients/jar-cinnamon-crumble.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "jar-cinnamon-crumble",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-topping-cinnamon-crumble",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-topping-cinnamon-crumble.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-topping-cinnamon-crumble",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "bin-classic",
+      "category": "ingredients",
+      "file": "assets/ingredients/bin-classic.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "bin-classic",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-classic",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-classic.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-classic",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "bin-cocoa",
+      "category": "ingredients",
+      "file": "assets/ingredients/bin-cocoa.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "bin-cocoa",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-cocoa",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-cocoa.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-cocoa",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "bin-cinnamon",
+      "category": "ingredients",
+      "file": "assets/ingredients/bin-cinnamon.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "bin-cinnamon",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-cinnamon",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-cinnamon.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-cinnamon",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "bin-chocolate-cinnamon",
+      "category": "ingredients",
+      "file": "assets/ingredients/bin-chocolate-cinnamon.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "bin-chocolate-cinnamon",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "symbol-chocolate-cinnamon",
+      "category": "symbols",
+      "file": "assets/symbols/symbol-chocolate-cinnamon.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "symbol-chocolate-cinnamon",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "finished-roll-1",
+      "category": "food",
+      "file": "assets/food/finished-roll-1.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "finished-roll-1",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "finished-roll-2",
+      "category": "food",
+      "file": "assets/food/finished-roll-2.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "finished-roll-2",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "finished-roll-3",
+      "category": "food",
+      "file": "assets/food/finished-roll-3.svg",
+      "width": 300,
+      "height": 280,
+      "anchor": [
+        150,
+        160
+      ],
+      "family": "finished-roll-3",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "pip-full-neutral",
+      "category": "characters",
+      "file": "assets/characters/pip-full-neutral.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "pip-full",
+      "state": "neutral",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "pip-counter-neutral",
+      "category": "characters",
+      "file": "assets/characters/pip-counter-neutral.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "pip-counter",
+      "state": "neutral",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "pip-full-ordering",
+      "category": "characters",
+      "file": "assets/characters/pip-full-ordering.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "pip-full",
+      "state": "ordering",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "pip-counter-ordering",
+      "category": "characters",
+      "file": "assets/characters/pip-counter-ordering.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "pip-counter",
+      "state": "ordering",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "pip-full-happy",
+      "category": "characters",
+      "file": "assets/characters/pip-full-happy.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "pip-full",
+      "state": "happy",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "pip-counter-happy",
+      "category": "characters",
+      "file": "assets/characters/pip-counter-happy.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "pip-counter",
+      "state": "happy",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "pip-full-impatient",
+      "category": "characters",
+      "file": "assets/characters/pip-full-impatient.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "pip-full",
+      "state": "impatient",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "pip-counter-impatient",
+      "category": "characters",
+      "file": "assets/characters/pip-counter-impatient.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "pip-counter",
+      "state": "impatient",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "pip-full-disappointed",
+      "category": "characters",
+      "file": "assets/characters/pip-full-disappointed.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "pip-full",
+      "state": "disappointed",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "pip-counter-disappointed",
+      "category": "characters",
+      "file": "assets/characters/pip-counter-disappointed.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "pip-counter",
+      "state": "disappointed",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "juniper-full-neutral",
+      "category": "characters",
+      "file": "assets/characters/juniper-full-neutral.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "juniper-full",
+      "state": "neutral",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "juniper-counter-neutral",
+      "category": "characters",
+      "file": "assets/characters/juniper-counter-neutral.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "juniper-counter",
+      "state": "neutral",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "juniper-full-ordering",
+      "category": "characters",
+      "file": "assets/characters/juniper-full-ordering.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "juniper-full",
+      "state": "ordering",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "juniper-counter-ordering",
+      "category": "characters",
+      "file": "assets/characters/juniper-counter-ordering.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "juniper-counter",
+      "state": "ordering",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "juniper-full-happy",
+      "category": "characters",
+      "file": "assets/characters/juniper-full-happy.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "juniper-full",
+      "state": "happy",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "juniper-counter-happy",
+      "category": "characters",
+      "file": "assets/characters/juniper-counter-happy.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "juniper-counter",
+      "state": "happy",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "juniper-full-impatient",
+      "category": "characters",
+      "file": "assets/characters/juniper-full-impatient.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "juniper-full",
+      "state": "impatient",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "juniper-counter-impatient",
+      "category": "characters",
+      "file": "assets/characters/juniper-counter-impatient.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "juniper-counter",
+      "state": "impatient",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "juniper-full-disappointed",
+      "category": "characters",
+      "file": "assets/characters/juniper-full-disappointed.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "juniper-full",
+      "state": "disappointed",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "juniper-counter-disappointed",
+      "category": "characters",
+      "file": "assets/characters/juniper-counter-disappointed.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "juniper-counter",
+      "state": "disappointed",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "milo-full-neutral",
+      "category": "characters",
+      "file": "assets/characters/milo-full-neutral.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "milo-full",
+      "state": "neutral",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "milo-counter-neutral",
+      "category": "characters",
+      "file": "assets/characters/milo-counter-neutral.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "milo-counter",
+      "state": "neutral",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "milo-full-ordering",
+      "category": "characters",
+      "file": "assets/characters/milo-full-ordering.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "milo-full",
+      "state": "ordering",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "milo-counter-ordering",
+      "category": "characters",
+      "file": "assets/characters/milo-counter-ordering.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "milo-counter",
+      "state": "ordering",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "milo-full-happy",
+      "category": "characters",
+      "file": "assets/characters/milo-full-happy.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "milo-full",
+      "state": "happy",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "milo-counter-happy",
+      "category": "characters",
+      "file": "assets/characters/milo-counter-happy.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "milo-counter",
+      "state": "happy",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "milo-full-impatient",
+      "category": "characters",
+      "file": "assets/characters/milo-full-impatient.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "milo-full",
+      "state": "impatient",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "milo-counter-impatient",
+      "category": "characters",
+      "file": "assets/characters/milo-counter-impatient.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "milo-counter",
+      "state": "impatient",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "milo-full-disappointed",
+      "category": "characters",
+      "file": "assets/characters/milo-full-disappointed.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "milo-full",
+      "state": "disappointed",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "milo-counter-disappointed",
+      "category": "characters",
+      "file": "assets/characters/milo-counter-disappointed.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "milo-counter",
+      "state": "disappointed",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "bea-full-neutral",
+      "category": "characters",
+      "file": "assets/characters/bea-full-neutral.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "bea-full",
+      "state": "neutral",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "bea-counter-neutral",
+      "category": "characters",
+      "file": "assets/characters/bea-counter-neutral.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "bea-counter",
+      "state": "neutral",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "bea-full-ordering",
+      "category": "characters",
+      "file": "assets/characters/bea-full-ordering.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "bea-full",
+      "state": "ordering",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "bea-counter-ordering",
+      "category": "characters",
+      "file": "assets/characters/bea-counter-ordering.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "bea-counter",
+      "state": "ordering",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "bea-full-happy",
+      "category": "characters",
+      "file": "assets/characters/bea-full-happy.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "bea-full",
+      "state": "happy",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "bea-counter-happy",
+      "category": "characters",
+      "file": "assets/characters/bea-counter-happy.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "bea-counter",
+      "state": "happy",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "bea-full-impatient",
+      "category": "characters",
+      "file": "assets/characters/bea-full-impatient.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "bea-full",
+      "state": "impatient",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "bea-counter-impatient",
+      "category": "characters",
+      "file": "assets/characters/bea-counter-impatient.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "bea-counter",
+      "state": "impatient",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "bea-full-disappointed",
+      "category": "characters",
+      "file": "assets/characters/bea-full-disappointed.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "bea-full",
+      "state": "disappointed",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "bea-counter-disappointed",
+      "category": "characters",
+      "file": "assets/characters/bea-counter-disappointed.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "bea-counter",
+      "state": "disappointed",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "nico-full-neutral",
+      "category": "characters",
+      "file": "assets/characters/nico-full-neutral.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "nico-full",
+      "state": "neutral",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "nico-counter-neutral",
+      "category": "characters",
+      "file": "assets/characters/nico-counter-neutral.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "nico-counter",
+      "state": "neutral",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "nico-full-ordering",
+      "category": "characters",
+      "file": "assets/characters/nico-full-ordering.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "nico-full",
+      "state": "ordering",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "nico-counter-ordering",
+      "category": "characters",
+      "file": "assets/characters/nico-counter-ordering.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "nico-counter",
+      "state": "ordering",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "nico-full-happy",
+      "category": "characters",
+      "file": "assets/characters/nico-full-happy.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "nico-full",
+      "state": "happy",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "nico-counter-happy",
+      "category": "characters",
+      "file": "assets/characters/nico-counter-happy.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "nico-counter",
+      "state": "happy",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "nico-full-impatient",
+      "category": "characters",
+      "file": "assets/characters/nico-full-impatient.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "nico-full",
+      "state": "impatient",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "nico-counter-impatient",
+      "category": "characters",
+      "file": "assets/characters/nico-counter-impatient.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "nico-counter",
+      "state": "impatient",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "nico-full-disappointed",
+      "category": "characters",
+      "file": "assets/characters/nico-full-disappointed.svg",
+      "width": 300,
+      "height": 580,
+      "anchor": [
+        150,
+        550
+      ],
+      "family": "nico-full",
+      "state": "disappointed",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "nico-counter-disappointed",
+      "category": "characters",
+      "file": "assets/characters/nico-counter-disappointed.svg",
+      "width": 300,
+      "height": 390,
+      "anchor": [
+        150,
+        380
+      ],
+      "family": "nico-counter",
+      "state": "disappointed",
+      "tags": [],
+      "availableStates": [
+        "neutral",
+        "ordering",
+        "happy",
+        "impatient",
+        "disappointed"
+      ]
+    },
+    {
+      "id": "tray",
+      "category": "equipment",
+      "file": "assets/equipment/tray.svg",
+      "width": 490,
+      "height": 150,
+      "anchor": [
+        245.0,
+        75.0
+      ],
+      "family": "tray",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "rolling-pin",
+      "category": "equipment",
+      "file": "assets/equipment/rolling-pin.svg",
+      "width": 380,
+      "height": 130,
+      "anchor": [
+        190.0,
+        65.0
+      ],
+      "family": "rolling-pin",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "spatula",
+      "category": "equipment",
+      "file": "assets/equipment/spatula.svg",
+      "width": 110,
+      "height": 300,
+      "anchor": [
+        55.0,
+        150.0
+      ],
+      "family": "spatula",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "scraper",
+      "category": "equipment",
+      "file": "assets/equipment/scraper.svg",
+      "width": 180,
+      "height": 160,
+      "anchor": [
+        90.0,
+        80.0
+      ],
+      "family": "scraper",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "slicing-tool",
+      "category": "equipment",
+      "file": "assets/equipment/slicing-tool.svg",
+      "width": 260,
+      "height": 120,
+      "anchor": [
+        130.0,
+        60.0
+      ],
+      "family": "slicing-tool",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "butter-dish",
+      "category": "equipment",
+      "file": "assets/equipment/butter-dish.svg",
+      "width": 240,
+      "height": 150,
+      "anchor": [
+        120.0,
+        75.0
+      ],
+      "family": "butter-dish",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "filling-shaker",
+      "category": "equipment",
+      "file": "assets/equipment/filling-shaker.svg",
+      "width": 166,
+      "height": 250,
+      "anchor": [
+        83.0,
+        125.0
+      ],
+      "family": "filling-shaker",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "oven-mitt",
+      "category": "equipment",
+      "file": "assets/equipment/oven-mitt.svg",
+      "width": 190,
+      "height": 230,
+      "anchor": [
+        95.0,
+        115.0
+      ],
+      "family": "oven-mitt",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "cooling-rack",
+      "category": "equipment",
+      "file": "assets/equipment/cooling-rack.svg",
+      "width": 490,
+      "height": 150,
+      "anchor": [
+        245.0,
+        75.0
+      ],
+      "family": "cooling-rack",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "oven-rack",
+      "category": "equipment",
+      "file": "assets/equipment/oven-rack.svg",
+      "width": 490,
+      "height": 150,
+      "anchor": [
+        245.0,
+        75.0
+      ],
+      "family": "oven-rack",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "plate",
+      "category": "equipment",
+      "file": "assets/equipment/plate.svg",
+      "width": 320,
+      "height": 180,
+      "anchor": [
+        160.0,
+        90.0
+      ],
+      "family": "plate",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "serving-tray",
+      "category": "equipment",
+      "file": "assets/equipment/serving-tray.svg",
+      "width": 490,
+      "height": 150,
+      "anchor": [
+        245.0,
+        75.0
+      ],
+      "family": "serving-tray",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "pastry-box-open",
+      "category": "equipment",
+      "file": "assets/equipment/pastry-box-open.svg",
+      "width": 300,
+      "height": 285,
+      "anchor": [
+        150.0,
+        142.5
+      ],
+      "family": "pastry-box",
+      "state": "open",
+      "tags": [],
+      "availableStates": [
+        "open",
+        "closed"
+      ]
+    },
+    {
+      "id": "pastry-box-closed",
+      "category": "equipment",
+      "file": "assets/equipment/pastry-box-closed.svg",
+      "width": 300,
+      "height": 285,
+      "anchor": [
+        150.0,
+        142.5
+      ],
+      "family": "pastry-box",
+      "state": "closed",
+      "tags": [],
+      "availableStates": [
+        "open",
+        "closed"
+      ]
+    },
+    {
+      "id": "steam",
+      "category": "effects",
+      "file": "assets/effects/steam.svg",
+      "width": 220,
+      "height": 180,
+      "anchor": [
+        110.0,
+        90.0
+      ],
+      "family": "steam",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "heat-indicator",
+      "category": "interface",
+      "file": "assets/interface/heat-indicator.svg",
+      "width": 160,
+      "height": 70,
+      "anchor": [
+        80.0,
+        35.0
+      ],
+      "family": "heat-indicator",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "oven-interior",
+      "category": "equipment",
+      "file": "assets/equipment/oven-interior.svg",
+      "width": 710,
+      "height": 440,
+      "anchor": [
+        355.0,
+        220.0
+      ],
+      "family": "oven-interior",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "oven-closed",
+      "category": "equipment",
+      "file": "assets/equipment/oven-closed.svg",
+      "width": 730,
+      "height": 660,
+      "anchor": [
+        365.0,
+        330.0
+      ],
+      "family": "oven",
+      "state": "closed",
+      "tags": [],
+      "availableStates": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "oven-open",
+      "category": "equipment",
+      "file": "assets/equipment/oven-open.svg",
+      "width": 730,
+      "height": 660,
+      "anchor": [
+        365.0,
+        330.0
+      ],
+      "family": "oven",
+      "state": "open",
+      "tags": [],
+      "availableStates": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "button-order-normal",
+      "category": "interface",
+      "file": "assets/interface/button-order-normal.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-order",
+      "state": "normal",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-order-selected",
+      "category": "interface",
+      "file": "assets/interface/button-order-selected.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-order",
+      "state": "selected",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-order-pressed",
+      "category": "interface",
+      "file": "assets/interface/button-order-pressed.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-order",
+      "state": "pressed",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-order-disabled",
+      "category": "interface",
+      "file": "assets/interface/button-order-disabled.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-order",
+      "state": "disabled",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-dough-normal",
+      "category": "interface",
+      "file": "assets/interface/button-dough-normal.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-dough",
+      "state": "normal",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-dough-selected",
+      "category": "interface",
+      "file": "assets/interface/button-dough-selected.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-dough",
+      "state": "selected",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-dough-pressed",
+      "category": "interface",
+      "file": "assets/interface/button-dough-pressed.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-dough",
+      "state": "pressed",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-dough-disabled",
+      "category": "interface",
+      "file": "assets/interface/button-dough-disabled.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-dough",
+      "state": "disabled",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-bake-normal",
+      "category": "interface",
+      "file": "assets/interface/button-bake-normal.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-bake",
+      "state": "normal",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-bake-selected",
+      "category": "interface",
+      "file": "assets/interface/button-bake-selected.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-bake",
+      "state": "selected",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-bake-pressed",
+      "category": "interface",
+      "file": "assets/interface/button-bake-pressed.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-bake",
+      "state": "pressed",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-bake-disabled",
+      "category": "interface",
+      "file": "assets/interface/button-bake-disabled.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-bake",
+      "state": "disabled",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-build-normal",
+      "category": "interface",
+      "file": "assets/interface/button-build-normal.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-build",
+      "state": "normal",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-build-selected",
+      "category": "interface",
+      "file": "assets/interface/button-build-selected.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-build",
+      "state": "selected",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-build-pressed",
+      "category": "interface",
+      "file": "assets/interface/button-build-pressed.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-build",
+      "state": "pressed",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-build-disabled",
+      "category": "interface",
+      "file": "assets/interface/button-build-disabled.svg",
+      "width": 270,
+      "height": 100,
+      "anchor": [
+        135.0,
+        50.0
+      ],
+      "family": "button-build",
+      "state": "disabled",
+      "tags": [],
+      "availableStates": [
+        "normal",
+        "selected",
+        "pressed",
+        "disabled"
+      ]
+    },
+    {
+      "id": "button-menu",
+      "category": "interface",
+      "file": "assets/interface/button-menu.svg",
+      "width": 110,
+      "height": 90,
+      "anchor": [
+        55.0,
+        45.0
+      ],
+      "family": "button-menu",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "button-audio",
+      "category": "interface",
+      "file": "assets/interface/button-audio.svg",
+      "width": 110,
+      "height": 90,
+      "anchor": [
+        55.0,
+        45.0
+      ],
+      "family": "button-audio",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "button-back",
+      "category": "interface",
+      "file": "assets/interface/button-back.svg",
+      "width": 110,
+      "height": 90,
+      "anchor": [
+        55.0,
+        45.0
+      ],
+      "family": "button-back",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "button-cancel",
+      "category": "interface",
+      "file": "assets/interface/button-cancel.svg",
+      "width": 110,
+      "height": 90,
+      "anchor": [
+        55.0,
+        45.0
+      ],
+      "family": "button-cancel",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "button-confirm",
+      "category": "interface",
+      "file": "assets/interface/button-confirm.svg",
+      "width": 110,
+      "height": 90,
+      "anchor": [
+        55.0,
+        45.0
+      ],
+      "family": "button-confirm",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "button-start",
+      "category": "interface",
+      "file": "assets/interface/button-start.svg",
+      "width": 300,
+      "height": 90,
+      "anchor": [
+        150.0,
+        45.0
+      ],
+      "family": "button-start",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "ticket-rail",
+      "category": "interface",
+      "file": "assets/interface/ticket-rail.svg",
+      "width": 1400,
+      "height": 60,
+      "anchor": [
+        700.0,
+        30.0
+      ],
+      "family": "ticket-rail",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "ticket-clip",
+      "category": "interface",
+      "file": "assets/interface/ticket-clip.svg",
+      "width": 80,
+      "height": 75,
+      "anchor": [
+        40.0,
+        37.5
+      ],
+      "family": "ticket-clip",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "order-ticket",
+      "category": "interface",
+      "file": "assets/interface/order-ticket.svg",
+      "width": 280,
+      "height": 650,
+      "anchor": [
+        140.0,
+        325.0
+      ],
+      "family": "order-ticket",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "tutorial-bubble",
+      "category": "interface",
+      "file": "assets/interface/tutorial-bubble.svg",
+      "width": 800,
+      "height": 220,
+      "anchor": [
+        400.0,
+        110.0
+      ],
+      "family": "tutorial-bubble",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "take-order-bubble",
+      "category": "interface",
+      "file": "assets/interface/take-order-bubble.svg",
+      "width": 230,
+      "height": 150,
+      "anchor": [
+        115.0,
+        75.0
+      ],
+      "family": "take-order-bubble",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "pointer",
+      "category": "interface",
+      "file": "assets/interface/pointer.svg",
+      "width": 150,
+      "height": 100,
+      "anchor": [
+        75.0,
+        50.0
+      ],
+      "family": "pointer",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "drag-cue",
+      "category": "interface",
+      "file": "assets/interface/drag-cue.svg",
+      "width": 130,
+      "height": 160,
+      "anchor": [
+        65.0,
+        80.0
+      ],
+      "family": "drag-cue",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "timer",
+      "category": "interface",
+      "file": "assets/interface/timer.svg",
+      "width": 180,
+      "height": 180,
+      "anchor": [
+        90.0,
+        90.0
+      ],
+      "family": "timer",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "star",
+      "category": "interface",
+      "file": "assets/interface/star.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "star",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "coin",
+      "category": "interface",
+      "file": "assets/interface/coin.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "coin",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "progress-meter",
+      "category": "interface",
+      "file": "assets/interface/progress-meter.svg",
+      "width": 300,
+      "height": 60,
+      "anchor": [
+        150.0,
+        30.0
+      ],
+      "family": "progress-meter",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "ticket-hand-in",
+      "category": "interface",
+      "file": "assets/interface/ticket-hand-in.svg",
+      "width": 270,
+      "height": 180,
+      "anchor": [
+        135.0,
+        90.0
+      ],
+      "family": "ticket-hand-in",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "badge-gold",
+      "category": "interface",
+      "file": "assets/interface/badge-gold.svg",
+      "width": 150,
+      "height": 180,
+      "anchor": [
+        75.0,
+        90.0
+      ],
+      "family": "score-badge",
+      "state": "gold",
+      "tags": [],
+      "availableStates": [
+        "gold",
+        "silver",
+        "bronze"
+      ]
+    },
+    {
+      "id": "badge-silver",
+      "category": "interface",
+      "file": "assets/interface/badge-silver.svg",
+      "width": 150,
+      "height": 180,
+      "anchor": [
+        75.0,
+        90.0
+      ],
+      "family": "score-badge",
+      "state": "silver",
+      "tags": [],
+      "availableStates": [
+        "gold",
+        "silver",
+        "bronze"
+      ]
+    },
+    {
+      "id": "badge-bronze",
+      "category": "interface",
+      "file": "assets/interface/badge-bronze.svg",
+      "width": 150,
+      "height": 180,
+      "anchor": [
+        75.0,
+        90.0
+      ],
+      "family": "score-badge",
+      "state": "bronze",
+      "tags": [],
+      "availableStates": [
+        "gold",
+        "silver",
+        "bronze"
+      ]
+    },
+    {
+      "id": "pause-panel",
+      "category": "interface",
+      "file": "assets/interface/pause-panel.svg",
+      "width": 700,
+      "height": 500,
+      "anchor": [
+        350.0,
+        250.0
+      ],
+      "family": "pause-panel",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "results-panel",
+      "category": "interface",
+      "file": "assets/interface/results-panel.svg",
+      "width": 700,
+      "height": 500,
+      "anchor": [
+        350.0,
+        250.0
+      ],
+      "family": "results-panel",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "logo",
+      "category": "branding",
+      "file": "assets/branding/logo.svg",
+      "width": 420,
+      "height": 230,
+      "anchor": [
+        210.0,
+        115.0
+      ],
+      "family": "logo",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "title-art",
+      "category": "branding",
+      "file": "assets/branding/title-art.svg",
+      "width": 900,
+      "height": 550,
+      "anchor": [
+        450.0,
+        275.0
+      ],
+      "family": "title-art",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "favicon",
+      "category": "branding",
+      "file": "assets/branding/favicon.svg",
+      "width": 100,
+      "height": 100,
+      "anchor": [
+        50.0,
+        50.0
+      ],
+      "family": "favicon",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "shop-window",
+      "category": "scenery",
+      "file": "assets/scenery/shop-window.svg",
+      "width": 420,
+      "height": 410,
+      "anchor": [
+        210.0,
+        205.0
+      ],
+      "family": "shop-window",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "doorway",
+      "category": "scenery",
+      "file": "assets/scenery/doorway.svg",
+      "width": 270,
+      "height": 500,
+      "anchor": [
+        135.0,
+        250.0
+      ],
+      "family": "doorway",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "order-counter",
+      "category": "scenery",
+      "file": "assets/scenery/order-counter.svg",
+      "width": 1440,
+      "height": 320,
+      "anchor": [
+        720.0,
+        160.0
+      ],
+      "family": "order-counter",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "register",
+      "category": "equipment",
+      "file": "assets/equipment/register.svg",
+      "width": 280,
+      "height": 250,
+      "anchor": [
+        140.0,
+        125.0
+      ],
+      "family": "register",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "order-pad",
+      "category": "equipment",
+      "file": "assets/equipment/order-pad.svg",
+      "width": 170,
+      "height": 230,
+      "anchor": [
+        85.0,
+        115.0
+      ],
+      "family": "order-pad",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "pencil",
+      "category": "equipment",
+      "file": "assets/equipment/pencil.svg",
+      "width": 50,
+      "height": 240,
+      "anchor": [
+        25.0,
+        120.0
+      ],
+      "family": "pencil",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "shop-sign-open",
+      "category": "scenery",
+      "file": "assets/scenery/shop-sign-open.svg",
+      "width": 240,
+      "height": 150,
+      "anchor": [
+        120.0,
+        75.0
+      ],
+      "family": "shop-sign",
+      "state": "open",
+      "tags": [],
+      "availableStates": [
+        "open",
+        "closed"
+      ]
+    },
+    {
+      "id": "shop-sign-closed",
+      "category": "scenery",
+      "file": "assets/scenery/shop-sign-closed.svg",
+      "width": 240,
+      "height": 150,
+      "anchor": [
+        120.0,
+        75.0
+      ],
+      "family": "shop-sign",
+      "state": "closed",
+      "tags": [],
+      "availableStates": [
+        "open",
+        "closed"
+      ]
+    },
+    {
+      "id": "background-order",
+      "category": "scenery",
+      "file": "assets/scenery/background-order.svg",
+      "width": 1440,
+      "height": 1000,
+      "anchor": [
+        720.0,
+        500.0
+      ],
+      "family": "background-order",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "background-dough",
+      "category": "scenery",
+      "file": "assets/scenery/background-dough.svg",
+      "width": 1440,
+      "height": 1000,
+      "anchor": [
+        720.0,
+        500.0
+      ],
+      "family": "background-dough",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "background-bake",
+      "category": "scenery",
+      "file": "assets/scenery/background-bake.svg",
+      "width": 1440,
+      "height": 1000,
+      "anchor": [
+        720.0,
+        500.0
+      ],
+      "family": "background-bake",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "background-build",
+      "category": "scenery",
+      "file": "assets/scenery/background-build.svg",
+      "width": 1440,
+      "height": 1000,
+      "anchor": [
+        720.0,
+        500.0
+      ],
+      "family": "background-build",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "worktop",
+      "category": "scenery",
+      "file": "assets/scenery/worktop.svg",
+      "width": 1100,
+      "height": 590,
+      "anchor": [
+        550.0,
+        295.0
+      ],
+      "family": "worktop",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    },
+    {
+      "id": "decorating-counter",
+      "category": "scenery",
+      "file": "assets/scenery/decorating-counter.svg",
+      "width": 1100,
+      "height": 590,
+      "anchor": [
+        550.0,
+        295.0
+      ],
+      "family": "decorating-counter",
+      "state": "default",
+      "tags": [],
+      "availableStates": [
+        "default"
+      ]
+    }
+  ],
+  "sampleOrder": [
+    {
+      "dough": "classic",
+      "filling": "cinnamon",
+      "icing": "cream-cheese",
+      "drizzle": "caramel",
+      "topping": "pecans"
+    },
+    {
+      "dough": "cocoa",
+      "filling": "chocolate-cinnamon",
+      "icing": "chocolate",
+      "drizzle": "vanilla",
+      "topping": "chocolate-chips"
+    },
+    {
+      "dough": "classic",
+      "filling": "cinnamon",
+      "icing": "vanilla",
+      "drizzle": "strawberry",
+      "topping": "rainbow-sprinkles"
+    }
+  ],
+  "characters": [
+    {
+      "id": "pip",
+      "name": "Pip",
+      "role": "worker"
+    },
+    {
+      "id": "juniper",
+      "name": "Juniper",
+      "role": "customer"
+    },
+    {
+      "id": "milo",
+      "name": "Milo",
+      "role": "customer"
+    },
+    {
+      "id": "bea",
+      "name": "Bea",
+      "role": "customer"
+    },
+    {
+      "id": "nico",
+      "name": "Nico",
+      "role": "customer"
+    }
+  ]
+}
