@@ -14,7 +14,7 @@ for name in ['assets','public']:
     shutil.copytree(ROOT/name,out/name,dirs_exist_ok=True)
 subprocess.run([sys.executable,str(ROOT/'scripts/validate.py'),str(out)],check=True)
 print(f'Built static gallery: {out}')
-bundle=ROOT/'output'/'papas-rolleria-starter-kit.zip'
+bundle=ROOT/'output'/'papas-cinnaboneria-starter-kit.zip'
 bundle.parent.mkdir(exist_ok=True)
 with zipfile.ZipFile(bundle,'w',zipfile.ZIP_DEFLATED) as archive:
     for name in ['index.html','game.css','game.js','game-engine.js','studio.html','styles.css','app.js','package.json','README.md','ART-DIRECTION.md']:

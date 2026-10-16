@@ -222,7 +222,7 @@ def draw_oven():
     for state in ['closed','open']:
         body=shadow(360,611,330,22)+rect(5,5,710,580,'#afc2c2',32)+rect(24,20,672,88,'#dce6de',20)+path('M 38 31 L 677 31','none','#faffef',7)
         body+=ellipse(75,64,25,25,'#667d7e')+path('M 75 64 L 83 48','none',CREAM,5)+ellipse(640,64,25,25,'#667d7e')+path('M 640 64 L 649 49','none',CREAM,5)
-        body+=rect(260,36,201,53,'#463b32',9)+text(360,72,'ROLLERIA',23,'#ffc373')
+        body+=rect(260,36,201,53,'#463b32',9)+text(360,71,'CINNABONERIA',17,'#ffc373')
         body+=place(interior,25,130,.94)
         if state=='closed':
             door=rect(32,133,656,410,'#879f9f',20)+rect(64,158,592,294,'#433931',18)+rect(85,177,551,253,'#ae7343',12)+path('M 95 190 L 623 190 L 389 425 L 96 425 Z','#fff1cb','none',0,'opacity=".12"')+rect(129,477,466,29,'#dce5d9',14)
@@ -268,7 +268,7 @@ def draw_interface():
 def logo():
     b=path('M 26 98 Q 13 57 60 34 Q 204 -2 359 34 Q 409 50 386 98 L 374 179 Q 205 220 39 179 Z',CREAM,INK,7)
     b+=path('M 41 105 Q 203 65 373 106 L 368 170 Q 210 206 46 170 Z','#d97752',INK,4)
-    b+=text(205,67,'PAPA’S',33,INK)+text(204,151,'ROLLERIA',57,CREAM,extra='letter-spacing="-2"')
+    b+=text(205,67,'PAPA’S',33,INK)+text(204,148,'CINNABONERIA',40,CREAM,extra='letter-spacing="-2"')
     return b
 
 def draw_shop():
@@ -318,7 +318,7 @@ def main():
     draw_backgrounds()
     for a in manifest:
         a['availableStates']=[v['state'] for v in manifest if v['family']==a['family']]
-    data={'version':1,'title':'Papa’s Rolleria','canvas':{'width':1440,'height':1000},'foodAnchor':[150,160],'assets':manifest,'sampleOrder':[dict(dough=d,filling=f,icing=i,drizzle=dr,topping=t) for d,f,i,dr,t in recipes],'characters':[{'id':'pip','name':'Pip','role':'worker'},{'id':'juniper','name':'Juniper','role':'customer'},{'id':'milo','name':'Milo','role':'customer'},{'id':'bea','name':'Bea','role':'customer'},{'id':'nico','name':'Nico','role':'customer'}]}
+    data={'version':1,'title':'Papa’s Cinnaboneria','canvas':{'width':1440,'height':1000},'foodAnchor':[150,160],'assets':manifest,'sampleOrder':[dict(dough=d,filling=f,icing=i,drizzle=dr,topping=t) for d,f,i,dr,t in recipes],'characters':[{'id':'pip','name':'Pip','role':'worker'},{'id':'juniper','name':'Juniper','role':'customer'},{'id':'milo','name':'Milo','role':'customer'},{'id':'bea','name':'Bea','role':'customer'},{'id':'nico','name':'Nico','role':'customer'}]}
     (ASSETS/'manifest.json').write_text(json.dumps(data,indent=2)+'\n')
     (ROOT/'public').mkdir(exist_ok=True)
     (ROOT/'public'/'favicon.svg').write_text((ASSETS/'branding'/'favicon.svg').read_text())

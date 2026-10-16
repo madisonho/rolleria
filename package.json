@@ -1,9 +1,9 @@
 {
-  "name": "rolleria",
+  "name": "papas-cinnaboneria",
   "version": "2.0.0",
   "type": "module",
   "private": true,
-  "description": "A playable four-station cinnamon-roll cooking game with original SVG artwork",
+  "description": "Papa’s Cinnaboneria: a playable four-station cinnamon-roll cooking game with original SVG artwork",
   "scripts": {
     "assets": "python3 scripts/draw_assets.py",
     "dev": "python3 -m http.server 4173 --bind 127.0.0.1",

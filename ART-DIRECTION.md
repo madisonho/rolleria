@@ -2,7 +2,7 @@
 
 ## The look
 
-Papa’s Rolleria is a cheerful small shop with cinnamon woodwork, turquoise fixtures, cream paper, hand-shaped silhouettes, and heavy rounded outlines. Keep the scene dense with purposeful tools while leaving the food work area clear. The spiral is the recurring signature, appearing on pastry tops, the worker’s hat, branding, and the wallpaper.
+Papa’s Cinnaboneria is a cheerful small shop with cinnamon woodwork, turquoise fixtures, cream paper, hand-shaped silhouettes, and heavy rounded outlines. Keep the scene dense with purposeful tools while leaving the food work area clear. The spiral is the recurring signature, appearing on pastry tops, the worker’s hat, branding, and the wallpaper.
 
 | Token | Hex | Use |
 |---|---|---|
